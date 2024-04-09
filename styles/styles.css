@@ -1,0 +1,195 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Acari Sans Neue";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+div,
+ul,
+li {
+  margin: 0;
+}
+
+.header {
+  height: 3.125rem;
+  background-color: rgba(105, 70, 70, 0.8666666667);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.header__logo {
+  display: flex;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__img {
+  height: 14.375rem;
+  background-image: url(/assets/images/cocktails-classiques.jpg);
+  background-size: contain;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: beige;
+}
+.user__quote {
+  font-family: "Cedarville Cursive";
+  font-size: 1.25rem;
+  color: #5f0f40;
+  font-weight: 400;
+}
+.user__heading {
+  font-size: 2rem;
+  color: #242524;
+  text-align: start;
+  margin-top: 10px;
+}
+.user__paragraph {
+  font-size: 1.25rem;
+  color: #242524;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.form {
+  margin-top: 24px;
+  display: flex;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+.form__label {
+  font-size: 1.5rem;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding-left: 48px;
+}
+.form__selector {
+  margin: auto;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: rgb(241, 240, 204);
+}
+
+.button__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.button {
+  margin-right: 1.5rem;
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 40%;
+  height: 3.5rem;
+  background-color: rgb(231, 224, 104);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: rgb(201, 195, 92);
+}
+
+.api__section {
+  background-color: beige;
+  padding-bottom: 50px;
+}
+
+.api__thumbnail {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.api__img {
+  background-color: antiquewhite;
+  width: 300px;
+  height: 300px;
+}
+
+.cocktail__name {
+  font-size: 1.25rem;
+  padding-top: 20px;
+}
+
+.cocktail__ingredients {
+  color: #5f0f40;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.ingredients__list {
+  width: 100%;
+  font-weight: 600;
+}
+
+.cocktail__instructions {
+  width: 90%;
+  display: flex;
+  padding-left: 1.5rem;
+  font-weight: 600;
+  color: #5f0f40;
+  font-style: italic;
+}
+
+.cocktail__subheader {
+  padding-right: 0.5rem;
+  color: black;
+}
+
+.cocktail__copy {
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: rgba(105, 70, 70, 0.8666666667);
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}/*# sourceMappingURL=styles.css.map */

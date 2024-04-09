@@ -1,0 +1,5 @@
+@mixin Iphone {
+  @media (max-width: 625px) {
+    @content;
+  }
+}

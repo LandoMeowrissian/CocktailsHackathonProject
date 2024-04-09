@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/acari-sans-neue" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
+    <title>Hackathon</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <h2 class="header__logo">What's in your bar, Grandma?</h2>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__img"></div>
+      </section>
+      <section class="user">
+        <h3 class="user__quote">"Cheers to joyous moments and delightful sips – where every glass tells a story, and every sip is a celebration"</h3>
+        <h1 class="user__heading">Sip & Smile: Grandma's Cocktail Corner</h1>
+        <p class="user__paragraph">Tell us which liquor you have in hand and we'll suggest a cocktail.</p>
+        <form class="form">
+          <label class="form__label">
+            <select class="form__selector" name="liquors" id="liquors">
+              <option class="bourbon" value="Bourbon">Bourbon</option>
+              <option class="gin" value="Gin">Gin</option>
+              <option class="rum" value="Rum">Rum</option>
+              <option class="scotch" value="Scotch">Scotch</option>
+              <option class="tequila" value="Tequila">Tequila</option>
+              <option class="vodka" value="Vodka" name="Vodka">Vodka</option>
+              <option class="whiskey" value="Whiskey">Whiskey</option>
+            </select>
+          </label>
+          <div class="button__container">
+            <button class="button shake__button" type="submit">Shake it up!</button>
+          </div>
+        </form>
+      </section>
+      <section class="api__section">
+        <!-- This entire section to be populated through JavaScript -->
+        <div class="api__thumbnail">
+          <img class="api__img" src="./assets/images/Cocktail_Shake.jpg" alt="delicious cocktail placeholder" />
+          <h3 class="cocktail__name">Cocktail Name</h3>
+        </div>
+        <div class="cocktail__ingredients">
+          <h4 class="cocktail__subheader">Ingredients List:</h4>
+          <!-- Ideally, only shows ingredients that are not null -->
+          <ul class="ingredients__list">
+            <li class="ingredients__item1">Ingredient 1</li>
+            <li class="ingredients__item2">Ingredient 2</li>
+            <li class="ingredients__item3">Ingredient 3</li>
+            <li class="ingredients__item4">Ingredient 4</li>
+          </ul>
+        </div>
+        <div class="cocktail__instructions">
+          <h4 class="cocktail__subheader">Instructions:</h4>
+          <p class="cocktail__copy">Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Grandma's Bar is Licious, 2023</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/cocktail-maker.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
